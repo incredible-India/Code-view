@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- text animation cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./public/src/css/index.css">
+    <title>Code-View</title>
+</head>
+<body onload="stopLoading()">
+    <!-- loading page  -->
+    <div class="loading">
+     
+        <p class="animated infinite bounce loadText"> Please Wait </p>
+        <img src="./public/svg/load.svg" alt="" class="img-fluid loadIMG">
+        
+    </div>
+
+    <!-- nav bar  -->
+<div class="myNAV">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Code_<span class="mkorange">View</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> <i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-user"></i> Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-file"></i> About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-book-reader"></i> Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Python</a></li>
+                  <li><a class="dropdown-item" href="#">C</a></li>
+                  <li><a class="dropdown-item" href="#">C++</a></li>
+                  <li><a class="dropdown-item" href="#">Java</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+
+<!-- content  -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="./public/svg/3rd.svg" alt="" class="img-fluid ">
+        </div>
+
+        <div class="col-md-6 ">
+            <h3 class="display-3 animated  bounce learnPro">
+                Learn <span class="mksky">Programming</span> Language In Easy Way <br>
+                <a  class="btn btn-outline-info">Start Learning</a>
+            </h3>
+           
+        </div>
+    </div>
+</div>
+
+
+
+<div class="mainDiv container">
+    <div class="row">
+        <div class="col-md-6">
+         
+            <h1 class="learnAi display-5">
+                Learn <span class="mksky">Artificial Intelligence</span> With Python
+            </h1>
+            <br>
+            <p style="font-size:25px;">Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="./public/svg/ai.jpg" alt="" class="img-fluid">
+        </div>
+ 
+ 
+    </div>
+<hr>
+    <div class="row">
+
+        <div class="col-md-6">
+            <img src="./public/svg/1720.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-md-6">
+         
+            <h1 class="learnAi display-5">
+                Learn <span class="mkorange">Android Applications</span> With Java
+            </h1>
+            <br>
+            <p style="font-size:25px;">
+                
+                Firstly Java was the official language for Android App Development (but now it was replaced by Kotlin) and consequently, it is the most used language as well. Many of the apps in the Play Store are built with Java, and it is also the most supported language by Google .</p>
+        </div>
+     
+ 
+ 
+    </div>
+</div>
+<!-- <div class="container">
+    <div class="justify-content">
+
+       <h4 class="justify-content display-5">     Code_<span class="mkorange">View</span>  is cross site plateform where everyone can learn "programming" for <span class="mkorange">free</span> and in easy way. We provide video lactures and notes of programming language included many projects. </h4>
+    
+    </div>
+</div> -->
+</body>
+
+<script>
+
+function stopLoading() {
+    document.getElementsByClassName("loading")[0].style.display = "none";
+}
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

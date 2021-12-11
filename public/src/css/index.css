@@ -1,0 +1,70 @@
+.loading{
+    background-image: linear-gradient(to right,
+    #1c92d2
+    ,
+    #f2fcfe);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+}
+.loadText{
+    font-size:45px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:auto;
+    margin: auto;
+
+
+}
+
+.loadIMG{
+
+    width: 100%;
+    height: 400px;
+}
+
+/*nav bar*/
+.myNAV{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.mkorange{
+    color: orangered;
+}
+
+/* scroll bar  */
+::-webkit-scrollbar{
+
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    
+  background-image: linear-gradient(to right,
+    orangered
+    ,
+    #f2fcfe);
+   
+      border-radius: 20px;
+  }
+
+  /*content*/
+
+  .mksky{
+      color :blue;
+  }
+
+  .learnPro{
+      padding:50px;
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .learnPro {
+        padding:0px;
+    }
+  }
