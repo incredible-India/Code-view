@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="./../css/cpp.css">
+   <link rel="stylesheet" href="./../css/c.css">
     <link rel="stylesheet" href="./../css/prism.css">
     <script src="./../js/prism.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -49,7 +49,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <li><a class="dropdown-item" href="./python.html">Python</a></li>
-                  <li><a class="dropdown-item" href="./c.html">C</a></li>
+                  <li><a class="dropdown-item" href="./cpp.html">C++</a></li>
                   <li><a class="dropdown-item" href="./java.html">Java</a></li>
                   
                 </ul>
@@ -64,7 +64,7 @@
 
 <div class="clogo">
 
-        <img src="./../../svg/c.svg" alt="" class="img-fluid cyl">
+        <img src="./../../svg/cpro.svg" alt="" class="img-fluid cyl">
 
         <!-- <h1 class="display-2">print("Hello World")</h1> -->
 
@@ -79,28 +79,29 @@
 <!-- about  -->
 <div class="container-fluid abts">
 
-    <h1 class="python display-4">C++</h1>
+    <h1 class="python display-4">C</h1>
 
 
     <p style=" font-size:20px;">
-        C++  is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Oracle, and IBM, so it is available on many platforms.
+        C  is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions. It has found lasting use in applications previously coded in assembly language. Such applications include operating systems and various application software for computer architectures that range from supercomputers to PLCs and embedded systems.
 
-        C++ was designed with an orientation toward system programming and embedded, resource-constrained software and large systems, with performance, efficiency, and flexibility of use as its design highlights.[10] C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,[10] including desktop applications, video games, servers (e.g. e-commerce, web search, or databases), and performance-critical applications (e.g. telephone switches or space probes).
+        A successor to the programming language B, C was originally developed at Bell Labs by Dennis Ritchie between 1972 and 1973 to construct utilities running on Unix. It was applied to re-implementing the kernel of the Unix operating system.[6] During the 1980s, C gradually gained popularity. It has become one of the most widely used programming languages,[7][8] with C compilers from various vendors available for the majority of existing computer architectures and operating systems. C has been standardized by ANSI since 1989 (ANSI C) and by the International Organization for Standardization (ISO).
         
-        C++ is standardized by the International Organization for Standardization (ISO), with the latest standard version ratified and published by ISO in December 2020 as ISO/IEC 14882:2020 (informally known as C++20).
+        C is an imperative procedural language. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. 
     </p>
 </div>
 
 <div class="application abts">
-    <h1 class="display-6">Applications for C++</h1>
+    <h1 class="display-6">Applications for C</h1>
 
     <ul>
-        <li> Google file system</li>
-        <li>Mozilla</li>
-        <li>MySQL</li>
-        <li>Rockstar Games</li>
-        <li>Gaming Applications</li>
-        <li>MongoDB </li>
+        <li> Operating Systems</li>
+        <li>Assemblers</li>
+        <li>Text Editors</li>
+        <li>Print Spoolers</li>
+        <li>Modern Programs</li>
+        <li>Databases</li>
+        <li>Utilities</li>
     </ul>
 </div>
 
@@ -114,16 +115,16 @@
 
 <div class="code df">
 
-<h3> <a name="code"></a> Basic Code In C++</h3>
+<h3> <a name="code"></a> Basic Code In C</h3>
 <hr>
-<h4>Hello World In C++</h4>
+<h4>Hello World In C</h4>
 
 <pre><code class="language-java">
  
-    #include &ltiostream&gt
+    #include &ltstdio.h&gt
         int main()
         {
-          std::cout << "Hello, World!" << std::endl;
+          printf("Hello World !");
           return 0;
         }
 
@@ -131,50 +132,65 @@
 
 
 <hr>
-<h4>C++ Program to Store and Display Information Using Structure .</h4>
+<h4>C Program to Calculate Difference Between Two Time Periods .</h4>
 
 <pre><code class="language-java">
  
-    #include &ltiostream&gt
-        using namespace std;
+    #include &ltstdio.h&gt
+        struct TIME {
+           int seconds;
+           int minutes;
+           int hours;
+        };
         
-        struct student
-        {
-            char name[50];
-            int roll;
-            float marks;
-        } s[10];
+        void differenceBetweenTimePeriod(struct TIME t1,
+                                         struct TIME t2,
+                                         struct TIME *diff);
         
-        int main()
-        {
-            cout << "Enter information of students: " << endl;
+        int main() {
+           struct TIME startTime, stopTime, diff;
         
-            // storing information
-            for(int i = 0; i < 10; ++i)
-            {
-                s[i].roll = i+1;
-                cout << "For roll number" << s[i].roll << "," << endl;
+           printf("Enter the start time. \n");
+           printf("Enter hours, minutes and seconds: ");
+           scanf("%d %d %d", &startTime.hours,
+                 &startTime.minutes,
+                 &startTime.seconds);
         
-                cout << "Enter name: ";
-                cin >> s[i].name;
+           printf("Enter the stop time. \n");
+           printf("Enter hours, minutes and seconds: ");
+           scanf("%d %d %d", &stopTime.hours,
+                 &stopTime.minutes,
+                 &stopTime.seconds);
         
-                cout << "Enter marks: ";
-                cin >> s[i].marks;
+           // Difference between start and stop time
+           differenceBetweenTimePeriod(startTime, stopTime, &diff);
+           printf("\nTime Difference: %d:%d:%d - ", startTime.hours,
+                  startTime.minutes,
+                  startTime.seconds);
+           printf("%d:%d:%d ", stopTime.hours,
+                  stopTime.minutes,
+                  stopTime.seconds);
+           printf("= %d:%d:%d\n", diff.hours,
+                  diff.minutes,
+                  diff.seconds);
+           return 0;
+        }
         
-                cout << endl;
-            }
-        
-            cout << "Displaying Information: " << endl;
-        
-            // Displaying information
-            for(int i = 0; i < 10; ++i)
-            {
-                cout << "\nRoll number: " << i+1 << endl;
-                cout << "Name: " << s[i].name << endl;
-                cout << "Marks: " << s[i].marks << endl;
-            }
-        
-            return 0;
+        // Computes difference between time periods
+        void differenceBetweenTimePeriod(struct TIME start,
+                                         struct TIME stop,
+                                         struct TIME *diff) {
+           while (stop.seconds > start.seconds) {
+              --start.minutes;
+              start.seconds += 60;
+           }
+           diff->seconds = start.seconds - stop.seconds;
+           while (stop.minutes > start.minutes) {
+              --start.hours;
+              start.minutes += 60;
+           }
+           diff->minutes = start.minutes - stop.minutes;
+           diff->hours = start.hours - stop.hours;
         }
 
 
