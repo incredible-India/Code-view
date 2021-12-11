@@ -96,7 +96,7 @@ body{
 /* background :#191919; */
 background-image: url(./../../svg/ai.jpg);
 background-size: cover;
-backrepeat: no-repeat;
+background-repeat: no-repeat;
 
 
 
@@ -106,9 +106,7 @@ backrepeat: no-repeat;
     margin-top:20px;
 }
 
-.snake{
-    margin-top:30px;
-}
+
 
 .abt{
     background-image: url(./../../svg/robot-handshake-human-background-futuristic-digital-age.jpg);

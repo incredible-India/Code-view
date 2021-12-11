@@ -10,10 +10,11 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./../css/python.css">
+    <link rel="stylesheet" href="./../css/java.css">
     <link rel="stylesheet" href="./../css/prism.css">
     <script src="./../js/prism.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <title>Code-View</title>
+    <title>Code-View JAVA</title>
 </head>
 <body onload="stopLoading()">
     <!-- loading page  -->
@@ -48,10 +49,10 @@
                     <i class="fas fa-book-reader"></i> Courses
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               
+                    <li><a class="dropdown-item" href="./python.html">Python</a></li>
                   <li><a class="dropdown-item" href="#">C</a></li>
                   <li><a class="dropdown-item" href="#">C++</a></li>
-                  <li><a class="dropdown-item" href="./java.html">Java</a></li>
+                  
                 </ul>
               </li>
             </ul>
@@ -62,11 +63,11 @@
 
 <!-- content  -->
 
-<div class="pythonlogo">
+<div class="javalogo">
 
-        <img src="./../../svg/pythonlogo.svg" alt="" class="img-fluid pyl">
+        <img src="./../../svg/javalogo.svg" alt="" class="img-fluid jyl">
 
-        <h1 class="display-2">print("Hello World")</h1>
+        <!-- <h1 class="display-2">print("Hello World")</h1> -->
 
 
 
@@ -77,81 +78,83 @@
 
 
 <!-- about  -->
-<div class="container-fluid abt">
+<div class="container-fluid abts">
 
-    <h1 class="python display-4">Python</h1>
+    <h1 class="python display-4">JAVA</h1>
 
 
     <p style=" font-size:20px;">
-        Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
-        Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.
+        Printable Version
+        What is Java technology and why do I need it?
+        Java is a programming language and computing platform first released by Sun Microsystems in 1995. It has evolved from humble beginnings to power a large share of today’s digital world, by providing the reliable platform upon which many services and applications are built. New, innovative products and digital services designed for the future continue to rely on Java, as well.
+        
+        There are many applications and even some websites that will not function unless you have Java installed. Java.com, this website, is intended for consumers who require Java for their desktop applications – specifically applications targeting Java 8. Developers as well as users that would like to learn Java programming should visit the dev.java website instead and business users should visit oracle.com/java for more information.
+        The JRE consists of the Java Virtual Machine (JVM), Java platform core classes, and supporting Java platform libraries. The JRE is the runtime portion of Java software, which is all you need to run Java WebStart applications from a supported web browser. It doesn’t come with development tools, though – these tools are part of the Java Development Kit (JDK).
     </p>
 </div>
 
-<div class="application abt">
-    <h1 class="display-6">Applications for Python</h1>
+<div class="application abts">
+    <h1 class="display-6">Applications for JAVA</h1>
 
     <ul>
-        <li>Web and Internet Development</li>
-        <li>Scientific and Numeric</li>
-        <li>Education</li>
-        <li>Desktop GUIs</li>
-        <li>Software Development</li>
+        <li>Mobile Applications</li>
+        <li>Desktop GUI Applications</li>
+        <li>Web-based Applications</li>
+        <li>Enterprise Applications</li>
+        <li>Gaming Applications</li>
+        <li>Cloud-based Applications</li>
     </ul>
 </div>
 
 
 <div class="containr" style="background:#fff; margin-top:10px;">
 
-    <a href="./../../notes/Python.pdf" name="notes" class="btn btn-outline-danger" style="margin-top: 20px; margin-bottom: 10px;">
+    <a href="./../../notes/java_tutorial.pdf" name="notes" class="btn btn-outline-danger" style="margin-top: 20px; margin-bottom: 10px;">
         Download Notes
     </a>
 </div>
 
 <div class="code df">
 
-<h3> <a name="code"></a> Basic Code In Python</h3>
+<h3> <a name="code"></a> Basic Code In JAVA</h3>
 <hr>
-<h4>Hello World In python</h4>
+<h4>Hello World In Java</h4>
 
 <pre><code class="language-python">
  
-    print("Hello world")
+    // Your First Program
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
 
 </code></pre>
 
 
 <hr>
-<h4>OpenCv</h4>
+<h4>Java Program to Access elements from a LinkedList.</h4>
 
 <pre><code class="language-python">
  
-    # import the opencv library
-import cv2
+    import java.util.LinkedList;
 
-
-# define a video capture object
-vid = cv2.VideoCapture(0)
-
-while(True):
-	
-	# Capture the video frame
-	# by frame
-	ret, frame = vid.read()
-
-	# Display the resulting frame
-	cv2.imshow('frame', frame)
-	
-	# the 'q' button is set as the
-	# quitting button you may use any
-	# desired button of your choice
-	if cv2.waitKey(1) & 0xFF == ord('q'):
-		break
-
-# After the loop release the cap object
-vid.release()
-# Destroy all the windows
-cv2.destroyAllWindows()
+    class Main {
+      public static void main(String[] args) {
+        LinkedList<String> languages = new LinkedList<>();
+    
+        // add elements in the LinkedList
+        languages.add("Python");
+        languages.add("Java");
+        languages.add("JavaScript");
+        System.out.println("LinkedList: " + languages);
+    
+        // get the element from the LinkedList
+        String str = languages.get(1);
+        System.out.print("Element at index 1: " + str);
+      }
+    }
 
 
 </code></pre>

@@ -1,0 +1,44 @@
+.jyl{
+    height: 200px;
+}
+
+.javalogo
+{
+
+    position: relative;
+
+    margin-top:20px;
+
+    width: 100%;
+
+    height: 300px;
+
+/* background :#191919; */
+background-image: url(./../../svg/image-blog-revel-top-java-tools.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+
+
+
+}
+
+    .abts{
+        background-image: url(./../../svg/971.jpg);
+        background-size: cover;
+        color:#fff;
+     
+        margin-top:20px;
+       
+    }
+
+    .abts p{
+        text-align: center;
+        box-sizing: border-box;
+        padding:15px;
+    }
+
+    .df h4,h3 {
+
+        margin-left: 10px;
+    }
+    
