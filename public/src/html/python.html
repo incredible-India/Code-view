@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- text animation cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../css/python.css">
+    <link rel="stylesheet" href="./../css/prism.css">
+    <script src="./../js/prism.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Code-View</title>
+</head>
+<body onload="stopLoading()">
+    <!-- loading page  -->
+    <div class="loading">
+     
+        <p class="animated infinite bounce loadText"> Please Wait </p>
+        <img src="./public/svg/load.svg" alt="" class="img-fluid loadIMG">
+        
+    </div>
+
+    <!-- nav bar  -->
+<div class="myNAV">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./../../../index.html">Code_<span class="mkorange">View</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./../../../index.html"> <i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-pen"></i> Notes </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#code"> <i class="fas fa-file"></i> Code</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-book-reader"></i> Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               
+                  <li><a class="dropdown-item" href="#">C</a></li>
+                  <li><a class="dropdown-item" href="#">C++</a></li>
+                  <li><a class="dropdown-item" href="#">Java</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+
+<!-- content  -->
+
+<div class="pythonlogo">
+
+        <img src="./../../svg/pythonlogo.svg" alt="" class="img-fluid pyl">
+
+        <h1 class="display-2">print("Hello World")</h1>
+
+
+
+
+
+
+</div>
+
+
+<!-- about  -->
+<div class="container-fluid abt">
+
+    <h1 class="python display-4">Python</h1>
+
+
+    <p style=" font-size:20px;">
+        Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+        Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.
+    </p>
+</div>
+
+<div class="application abt">
+    <h1 class="display-6">Applications for Python</h1>
+
+    <ul>
+        <li>Web and Internet Development</li>
+        <li>Scientific and Numeric</li>
+        <li>Education</li>
+        <li>Desktop GUIs</li>
+        <li>Software Development</li>
+    </ul>
+</div>
+
+
+<div class="containr" style="background:#fff; margin-top:10px;">
+
+    <a href="./../../notes/Python.pdf" class="btn btn-outline-danger" style="margin-top: 20px; margin-bottom: 10px;">
+        Download Notes
+    </a>
+</div>
+
+<div class="code df">
+
+<h3> <a name="code"></a> Basic Code In Python</h3>
+<hr>
+<h4>Hello World In python</h4>
+
+<pre><code class="language-python">
+ 
+    print("Hello world")
+
+</code></pre>
+
+
+<hr>
+<h4>OpenCv</h4>
+
+<pre><code class="language-python">
+ 
+    # import the opencv library
+import cv2
+
+
+# define a video capture object
+vid = cv2.VideoCapture(0)
+
+while(True):
+	
+	# Capture the video frame
+	# by frame
+	ret, frame = vid.read()
+
+	# Display the resulting frame
+	cv2.imshow('frame', frame)
+	
+	# the 'q' button is set as the
+	# quitting button you may use any
+	# desired button of your choice
+	if cv2.waitKey(1) & 0xFF == ord('q'):
+		break
+
+# After the loop release the cap object
+vid.release()
+# Destroy all the windows
+cv2.destroyAllWindows()
+
+
+</code></pre>
+</div>
+</body>
+
+<script>
+
+function stopLoading() {
+    document.getElementsByClassName("loading")[0].style.display = "none";
+}
+
+
+</script>
+<script src="./public/src/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

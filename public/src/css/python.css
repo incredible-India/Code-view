@@ -1,0 +1,130 @@
+body{
+    background-image: linear-gradient(to right,
+    #1c92d2
+    ,
+    #f2fcfe);
+
+}
+.loading{
+    background-image: linear-gradient(to right,
+    #1c92d2
+    ,
+    #f2fcfe);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+}
+.loadText{
+    font-size:45px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:auto;
+    margin: auto;
+
+
+}
+
+.loadIMG{
+
+    width: 100%;
+    height: 400px;
+}
+
+/*nav bar*/
+.myNAV{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.mkorange{
+    color: orangered;
+}
+
+/* scroll bar  */
+::-webkit-scrollbar{
+
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    
+  background-image: linear-gradient(to right,
+    #1c92d2
+    ,
+    #f2fcfe);
+   
+      border-radius: 20px;
+  }
+
+  .mkorange{
+    color: orangered;
+}
+
+  .btmNAV{
+    margin-top:20px;
+   
+    width: 100%;
+    height: 200px;
+    background-color: #191919;
+    color: #fff;
+    bottom:0;
+    display: flex;
+  text-align: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.btmNAV h6 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.pythonlogo
+{
+
+    position: relative;
+
+    margin-top:20px;
+
+    width: 100%;
+
+    height: 300px;
+
+/* background :#191919; */
+background-image: url(./../../svg/ai.jpg);
+background-size: cover;
+backrepeat: no-repeat;
+
+
+
+}
+
+.pyl{
+    margin-top:20px;
+}
+
+.snake{
+    margin-top:30px;
+}
+
+.abt{
+    background-image: url(./../../svg/robot-handshake-human-background-futuristic-digital-age.jpg);
+    background-size: cover;
+    color:#fff;
+ 
+    margin-top:20px;
+   
+}
+
+.abt p{
+    text-align: center;
+    box-sizing: border-box;
+    padding:15px;
+}
+
+.df{
+    background: #fff;
+}
