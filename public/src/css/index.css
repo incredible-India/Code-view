@@ -1,3 +1,9 @@
+body{
+    background-image: linear-gradient(to right,
+    #1c92d2
+    ,
+    #f2fcfe);
+}
 .loading{
     background-image: linear-gradient(to right,
     #1c92d2
@@ -45,7 +51,7 @@
   ::-webkit-scrollbar-thumb{
     
   background-image: linear-gradient(to right,
-    orangered
+    #1c92d2
     ,
     #f2fcfe);
    
@@ -67,4 +73,11 @@
     .learnPro {
         padding:0px;
     }
+  }
+
+  .chart_div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
   }

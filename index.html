@@ -10,6 +10,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./public/src/css/index.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <title>Code-View</title>
 </head>
 <body onload="stopLoading()">
@@ -23,7 +24,7 @@
 
     <!-- nav bar  -->
 <div class="myNAV">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Code_<span class="mkorange">View</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +60,7 @@
 
 <!-- content  -->
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
             <img src="./public/svg/3rd.svg" alt="" class="img-fluid ">
@@ -68,7 +69,7 @@
         <div class="col-md-6 ">
             <h3 class="display-3 animated  bounce learnPro">
                 Learn <span class="mksky">Programming</span> Language In Easy Way <br>
-                <a  class="btn btn-outline-info">Start Learning</a>
+                <a  class="btn btn-outline-primary">Start Learning</a>
             </h3>
            
         </div>
@@ -77,7 +78,7 @@
 
 
 
-<div class="mainDiv container">
+<div class="mainDiv container-fluid">
     <div class="row">
         <div class="col-md-6">
          
@@ -114,6 +115,28 @@
  
  
     </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+         
+            <h1 class="learnAi display-5">
+                The  <span class="mksky">Algorithms</span> in the C++ 
+            </h1>
+            <br>
+            <p style="font-size:25px;">
+                C++ is the best language for not only competitive but also using to solve the algorithm and data structure problems . C++ use increases the computational level of thinking in memory , time complexity and data flow level. An Explicit Study Of Algorithms And Its Types In STL. STL supports various algorithms that act on containers through iterators. As these algorithms act on iterators and not directly on containers, they can be used on any type of iterators.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="./public/svg/971.jpg" alt="" class="img-fluid" height="350px;">
+        </div>
+ 
+ 
+    </div>
+    
+</div>
+
+<div class="container">
+    <div id="chart_div" style=" height: 500px; margin-top:20px;" ></div>
 </div>
 <!-- <div class="container">
     <div class="justify-content">
@@ -132,5 +155,6 @@ function stopLoading() {
 
 
 </script>
+<script src="./public/src/js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
